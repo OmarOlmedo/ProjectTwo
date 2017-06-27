@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Second Bootstrap Project</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/style.css">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">Chilaquiles con Don Aquiles</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href=""data-toggle="modal" data-target="#modal-contact-form">Contact Us</a></li>
+          <li>
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Product</li>
+        </ol>
+      </div>
+      <div class="row">
+        <div class="page-header">
+          <h1>Products. <small>We build amazing stuff.</small></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Product One</h3>
+          <p class="text-muted">This is an awesome product on descriptcion</p>
+        </div>
+        <div class="col-md-6">
+          <div class="btn-group pull-right">
+            <button class="btn btn-info btn-lg">But Now</button>
+            <button class="btn btn-default btn-lg">Free Trial!</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div id="carousel-products" class="carousel slide" data-ride="carousel">
+          <!-- indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-products" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-products" data-slide-to="1"></li>
+            <li data-target="#carousel-products" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/americano.jpg" height="300" width="1170">
+              <div class="carousel-caption">
+                <p>Team</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/Imagen17.jpg" height="300" width="1170">
+              <div class="carousel-caption">
+                <p>Escudo</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/Imagen18.jpg" height="300" width="1170">
+              <div class="carousel-caption">
+                <p>Proyecto</p>
+              </div>
+            </div>
+          </div>
+          <!-- controls -->
+          <a href="#carousel-products" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a href="#carousel-products" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel-group" id="accordion" role="tablist">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a href="#collapseOne" role="button" data-toggle="collapse" data-parent="#accordion">
+                    Question #1
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+                <div class="panel-body">
+                  <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate in provident molestias, totam consequatur numquam, illum. Repellat sint, quis incidunt vero, quas labore veritatis tempore repellendus dicta, ullam iure.</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a href="#collapseTwo" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion">
+                    Question #2
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eos numquam, magni fuga, exercitationem illum veniam maiores ex vitae, eaque officiis nulla praesentium accusantium, quam repudiandae veritatis aut officia! Dolor.</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a href="#collapseThree" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion">
+                    Question #3
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eos numquam, magni fuga, exercitationem illum veniam maiores ex vitae, eaque officiis nulla praesentium accusantium, quam repudiandae veritatis aut officia! Dolor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pull-right">
+            <h3>Testimonials</h3>
+                <div class="item active">
+                  <blockquote>
+                    <p>This is testimonial 1</p>
+                    <small>John Doe</small>
+                  </blockquote>
+                </div>
+                <div class="item">
+                  <blockquote>
+                    <p>This is testimonial 2</p>
+                    <small>Steve Corls</small>
+                  </blockquote>
+                </div>
+                <div class="item">
+                  <blockquote>
+                    <p>This is testimonial 3</p>
+                    <small>Dennise Mihn</small>
+                  </blockquote>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="pager">
+          <li class="previous"><a href="#">
+            &larr; Previous
+          </a></li>
+          <li class="next"><a href="#">
+            Next &rarr; 
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr/>
+    <div class="footer">
+      <p class="text-center lead">
+        Wanna get in touch? Email us at <a href="">omarolmedo96@gmail.com</a>
+      </p>
+      <hr>
+      <ul class="list-unstyled text-center list-inline features">
+        <li>Follow us:</li>
+        <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>}
+      <p class="text-center text-muted">
+        &copy; Copyright 2017 Company Name
+      </p>
+    </div>
+    <!-- modal contact form -->
+    <div class="modal fade" id="modal-contact-form" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h3>
+              Contact Us
+            </h3>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="contact-name" class="form-control-label">Name:
+                </label>
+                <input type="text" class="form-control" id="contact-name">
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-control-label">Email:
+                </label>
+                <input type="email" class="form-control" id="contact-email">
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="form-control-label">Message:
+                </label>
+                <textarea name="" id="contact-message" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="submit" class="btn btn-primary" value="Send">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        interval:4000
+      });
+    });
+  </script>
+  </body>
+</html>
